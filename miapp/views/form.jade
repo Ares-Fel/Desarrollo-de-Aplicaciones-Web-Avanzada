@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1= title
+    form(name="add-estimation", method="post")
+        div.input
+            span.label Nombre: 
+            input(type="text", name="title")
+        div.input
+            span.label Tarjeta: 
+            input(type="text", name="tarjeta")
+
+    a(href="/send") Enviar
